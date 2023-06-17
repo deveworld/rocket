@@ -78,16 +78,17 @@ class Rocket:
     
     def interpret_delta_v(self) -> List[str]:
         delta_v_interpretation = []
-        if self.calc_delta_v() > 9.5 * 1000:
-            delta_v_interpretation.append("LEO (Low Earth orbit) is reachable.")
+        delta_v = self.calc_delta_v()
+        if delta_v > 9.5 * 1000:
+            delta_v_interpretation.append(f"A delta-v of {delta_v:.1f} m/s would be `sufficient` to enter the LEO (Low Earth Orbit).")
         else:
-            delta_v_interpretation.append("LEO (Low Earth orbit) cannot be reached.")
+            delta_v_interpretation.append(f"A delta-v of {delta_v:.1f} m/s would be `insufficient` to enter the LEO (Low Earth Orbit).")
             return delta_v_interpretation
         
-        if self.calc_delta_v() > 13.5 * 1000:
-            delta_v_interpretation.append("GEO (Geostationary orbit) is reachable.")
+        if delta_v > 13.5 * 1000:
+            delta_v_interpretation.append(f"A delta-v of {delta_v:.1f} m/s would be `sufficient` to enter the GEO (Geostationary Orbit).")
         else:
-            delta_v_interpretation.append("GEO(Geostationary orbit) cannot be reached.")
+            delta_v_interpretation.append(f"A delta-v of {delta_v:.1f} m/s would be `insufficient` to enter the GEO (Geostationary Orbit).")
             return delta_v_interpretation
 
         return delta_v_interpretation

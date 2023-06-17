@@ -30,6 +30,8 @@ if __name__ == "__main__":
     # m0 = 2340; mf = 1290; thrust = 192000; time = 8.848; g0 = 9.81
     rocket = Rocket(m0, mf, thrust, time, g0)
 
+    print("-"*30)
+
     print(f"Isp                         = {rocket.calc_isp():.3f}\ts")
     print(f"Effective exhaust velocity  = {rocket.calc_effective_exhaust_velocity():.3f}\tm/s")
     print(f"Delta-v                     = {rocket.calc_delta_v():.3f}\tm/s")
@@ -47,4 +49,7 @@ if __name__ == "__main__":
     res = space.calculate()
     duration = get_time() - start
     print(f"Calculated in {duration} sec with {dt} dt")
-    print(res)
+
+    print(f"Max speed (at burnout): {res['burnout_v']:.1f} m/s at {res['burnout_h']:.1f} m")
+    print(f"Max altitude: {res['maxh_h']:.1f} m at {res['maxh_v']:.1f} m/s at {res['maxh_t']:.1f} s")
+    print(f"Landing time: {res['land_t']:.1f} s with {res['land_v']:.1f} m/s")

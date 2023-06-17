@@ -69,8 +69,8 @@ class Space:
             h += v*self.dt
             t = self.dt * i
             i += 1
-        result["end_v"] = v
-        result["end_t"] = t
-        result["end_h"] = h
-        result["end_m"] = m
+        result["land_v"] = v
+        result["land_t"] = t
+        result["land_h"] = h
+        result["land_m"] = m
         return result

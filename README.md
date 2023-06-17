@@ -14,35 +14,38 @@ Run the example script: \
 ## example.py
 In this example, the rocket has the following parameters:
 
-- Initial mass: 0.5 kg
-- Final mass: 0.2 kg
-- Average thrust: 14.715 N (equivalent to 1.5 kg)
-- Propulsion time: 30 s
-- Drag coefficient: 0.6
+- Initial mass: 30 kg
+- Final mass: 10 kg
+- Average thrust: 2500 N (approximately 510 kg)
+- Propulsion time: 7 s
+- Drag coefficient: 0.65
 - Surface gravity: 9.81 m/s^2
 
-And this perfomed on 9.81 m/s^2 of surface. (inputted text surrounded by **)
+The results are as follows (the text entered is surrounded by *)
 ```
-Initial mass (kg): *0.5*
-Final mass (kg): *0.2*
-Average thrust (N): *14.715*
-Propulsion time (s): *30*
+Initial mass (kg): *30*
+Final mass (kg): *10*
+Average thrust (N): *5000*
+Propulsion time (s): *7*
 Gravitational acceleration (m/s^2): *9.81*
 Drag coefficient: *0.65*
-Isp                         = 150.000   s
-Effective exhaust velocity  = 1471.500  m/s
-Delta-v                     = 1348.322  m/s
 ------------------------------
-LEO (Low Earth orbit) cannot be reached.
+Isp                         = 178.389   s
+Effective exhaust velocity  = 1750.000  m/s
+Delta-v                     = 1922.572  m/s
+------------------------------
+A delta-v of 1922.6 m/s would be `insufficient` to enter the LEO (Low Earth Orbit).
 ------------------------------
 
-Calculated in 10.198925733566284 sec with 0.010000000000000 dt
-{'burnout_v': 5.69391659769960, 'burnout_t': 30.0000000000000, 'burnout_h': 159.188785149418, 'burnout_m': 0.200000, 'maxh_v': -0.0779236683479095, 'maxh_t': 30.2700000000000, 'maxh_h': 159.640947143393, 'maxh_m': 0.200000, 'end_v': -2.21997331069142, 'end_t': 102.110000000000, 'end_h': -0.0167797950825234, 'end_m': 0.200000}
+Calculated in 4.612675428390503 sec with 0.0100000000000000 dt
+Max speed (at burnout): 114.2 m/s at 728.8 m
+Max altitude: 779.8 m at -0.1 m/s at 9.4 s
+Landing time: 59.4 s with -15.7 m/s
 ```
 Based on the calculations, this rocket has:
 
-- Specific impulse (Isp): 150 s
-- Effective exhaust velocity: 1471.5 m/s
-- Delta-v: 1348.322 m/s
+- Specific impulse (Isp): 178.389 s
+- Effective exhaust velocity: 1750 m/s
+- Delta-v: 1922.572 m/s
 
-The maximum height achieved by the rocket is approximately 159.64 m, as indicated in the result.
+The maximum height achieved by the rocket is approximately 779.8 m, as indicated in the result.
