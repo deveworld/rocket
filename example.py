@@ -17,7 +17,7 @@ if __name__ == "__main__":
                 print(error_message)
         return float_answer
 
-    error_message = "It seems like not a decimal or a number. Please try again without any character.\n"
+    error_message = "It doesn't appear to be a decimal or a number. Please try again without any characters.\n"
     m0 = int_input("Initial mass (kg): ", error_message)
     mf = int_input("Final mass (kg): ", error_message)
     thrust = int_input("Average thrust (N): ", error_message)
