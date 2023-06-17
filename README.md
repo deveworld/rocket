@@ -81,7 +81,7 @@ Additionally, we also calculate $v_{exh}$ , the effective exhaust velocity ($m/s
 $$v_{exh} = I_{sp} \cdot g_{0}$$
 
 Finally, we can calculate $\Delta V$ (available change in velocity, $m/s$), since we know all the necessary values:
-$$\Delta V = v_{exh} \cdot \ln(\frac{m_{0}}{m{f}})$$
+$$\Delta V = v_{exh} \cdot \ln(\frac{m_{0}}{m_{f}})$$
 
 ### Simulation process
 
