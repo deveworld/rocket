@@ -93,7 +93,7 @@ where
 - $a$ is the acceleration of the rocket ($m/s^{2}$)
 - $g(h)$ is the approximate function of gravitational acceleration over altitude ($m/s^{2}$)
 - $R_{E}$ is the radius of a planet ($m$)
-- $p(h)$ is the approximate function of air density over altitude
+- $p(h)$ is the approximate function of air density over altitude ($kg/m^{3}$)
 - $m$ is the mass of rocket ($kg$)
 - $v$ is the velocity of rocket ($m/s$)
 - $h$ is the height of rocket ($m$)
