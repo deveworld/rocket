@@ -19,14 +19,14 @@ In this case, the rocket has
 30 s of propulsion time,
 0.6 of drag coefficient.
 
-And this perfomed on 9.81 m/s^2 of surface.
+And this perfomed on 9.81 m/s^2 of surface. (inputted text surrounded by **)
 ```
 Initial mass (kg): *0.5*
 Final mass (kg): *0.2*
 Average thrust (N): *14.715*
 Propulsion time (s): *30*
 Gravitational acceleration (m/s^2): *9.81*
-Drag coefficient: 0.65
+Drag coefficient: *0.65*
 Isp                         = 150.000   s
 Effective exhaust velocity  = 1471.500  m/s
 Delta-v                     = 1348.322  m/s
