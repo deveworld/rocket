@@ -18,7 +18,7 @@ class Rocket:
             m0 (numpy.float32): Initial mass                  (kg)
             mf (numpy.float32): Final mass                    (kg)
             thrust (numpy.float32): Average thrust            (N)
-            time (numpy.float32): Propulsion time             (s)
+            time (numpy.float32): Total propulsion time       (s)
             g0 (numpy.float32): Gravitational acceleration    (m/s^2)
         """
         self.m0 = m0

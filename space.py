@@ -8,7 +8,7 @@ class Space:
     def __init__(self, rocket: Rocket, drag: Float = Float("0.75"), dt: Float = Float("0.01")) -> None:
         self.rocket = rocket
         self.p_formula_constant = (4.69729*(10**29))
-        self.planet_radius = 6371 # km
+        self.planet_radius = 6371 * 1000 # m
         self.cd = drag
         self.dt = dt
     
