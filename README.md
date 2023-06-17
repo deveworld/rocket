@@ -1,5 +1,5 @@
 # Rocket
-A simulation of rocket in Python
+A Python simulation of a rocket.
 
 ## How to use
 Clone this repository: \
@@ -16,7 +16,7 @@ In this example, the rocket has the following parameters:
 
 - Initial mass: 30 kg
 - Final mass: 10 kg
-- Average thrust: 2500 N (approximately 510 kg)
+- Average thrust: 5000 N (approximately 510 kg)
 - Propulsion time: 7 s
 - Drag coefficient: 0.65
 - Surface gravity: 9.81 m/s^2
@@ -27,17 +27,17 @@ Initial mass (kg): *30*
 Final mass (kg): *10*
 Average thrust (N): *5000*
 Propulsion time (s): *7*
-Gravitational acceleration (m/s^2): *9.81*
 Drag coefficient: *0.65*
+Gravitational acceleration (m/s^2): *9.81*
 ------------------------------
 Isp                         = 178.389   s
 Effective exhaust velocity  = 1750.000  m/s
 Delta-v                     = 1922.572  m/s
 ------------------------------
-A delta-v of 1922.6 m/s would be `insufficient` to enter the LEO (Low Earth Orbit).
+A delta-v of 1922.6 m/s would be 'insufficient' to enter the LEO (Low Earth Orbit).
 ------------------------------
 
-Calculated in 4.612675428390503 sec with 0.0100000000000000 dt
+Calculated in 4.612675428390503 sec with 0.01 of dt.
 Max speed (at burnout): 114.2 m/s at 728.8 m
 Max altitude: 779.8 m at -0.1 m/s at 9.4 s
 Landing time: 59.4 s with -15.7 m/s
