@@ -102,4 +102,4 @@ where
 The code run by small $\Delta t$:
 $$v = v + a \cdot \Delta t$$
 $$h = h + v \cdot \Delta t$$
-$$m = m - \frac {M_{p}}{t} \cdot \Delta t \ (m > m_{f})$$
+$$m = m - \frac {M_{p}}{time} \cdot \Delta t \ (m > m_{f})$$
