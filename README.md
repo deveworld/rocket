@@ -1,6 +1,16 @@
 # Rocket
 A simulation of rocket in Python
 
+## How to use
+`https://github.com/deveworld/rocket`
+Clone this repo.
+
+`pip install -r requirements.txt`
+Intall requirements.
+
+`python3 example.py`
+Run example.py
+
 ## example.py
 In this case, the rocket has
 0.5 kg of initial mass,
