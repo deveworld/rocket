@@ -1,5 +1,5 @@
-# Rocket
-A Python simulation of a rocket.
+# MiniRocket
+A simple python simulation of a rocket.
 
 ## How to use
 Clone this repository: \
@@ -38,9 +38,9 @@ A delta-v of 1922.6 m/s would be 'insufficient' to enter the LEO (Low Earth Orbi
 ------------------------------
 
 Calculated in 4.612675428390503 sec with 0.01 of dt.
-Max speed (at burnout): 114.2 m/s at 728.8 m
-Max altitude: 779.8 m at -0.0 m/s at 9.3 s
-Landing time: 59.4 s with -15.7 m/s
+Burnout: 114.19 m/s at 729.97 m
+Max altitude: 780.91 m at -0.10 m/s at 9.36 s
+Landing time: 59.45 s with -15.70 m/s
 ```
 Based on the calculations, this rocket has:
 
@@ -48,7 +48,7 @@ Based on the calculations, this rocket has:
 - Effective exhaust velocity: 1750 m/s
 - Delta-v: 1922.572 m/s
 
-The maximum height achieved by the rocket is approximately 779.8 m, as indicated in the result.
+The maximum height achieved by the rocket is approximately 780.91 m, as indicated in the result.
 
 ## Process
 (You can also see the entire process in the code annotation.)
@@ -88,7 +88,7 @@ $$\Delta V = v_{exh} \cdot \ln(\frac{m_{0}}{m_{f}})$$
 Since we got all variables to simulating, we can do numerical integration.
 $$g(h) = g_{0} \frac {{R_{E}}^{2}}{({R_{E}}^{2}+h)^{2}}$$
 $$p(h) = \frac {4.69729 \cdot 10^{29}}{|17h^{2} + 186000h + 7265070000|^{3}}$$
-$$a = -g(h) + \frac {F_{m}}{m} - \frac {\frac {1}{2} \cdot p(h) \cdot v^{2} \cdot c_{d}}{m}$$
+$$a = -g(h) + \frac {F(t)}{m} - \frac {\frac {1}{2} \cdot p(h) \cdot v^{2} \cdot c_{d}}{m}$$
 where
 - $a$ is the acceleration of the rocket ($m/s^{2}$)
 - $g(h)$ is the approximate function of gravitational acceleration over altitude ($m/s^{2}$)
@@ -102,4 +102,5 @@ where
 The code run by small $\Delta t$:
 $$v = v + a \cdot \Delta t$$
 $$h = h + v \cdot \Delta t$$
-$$m = m - \frac {M_{p}}{time} \cdot \Delta t \ (m > m_{f})$$
+The $\Delta m$  is expected to be proportional to the thrust, so it will be like:
+$$m = m - \frac {M_{p}}{I_{t}} \cdot F \cdot \Delta t \ (m > m_{f})$$
